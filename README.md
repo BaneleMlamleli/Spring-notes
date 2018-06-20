@@ -7,9 +7,11 @@ This is all my Spring resources and tutorials that I am using
 - <a href="https://www.jetbrains.com/idea/?fromMenu">IntelliJ IDEA</a>
 
 Spring annotations
-
 - <a href="https://springframework.guru/spring-framework-annotations/">springframework.guru</a>
 - <a href="https://dzone.com/articles/a-guide-to-spring-framework-annotations">dzone</a>
 
 Maven
 - <a href="https://maven.apache.org/guides/getting-started/">Maven Getting Started Guide</a>
+
+General material
+- <a href="http://www.java2novice.com/">java2novice</a>

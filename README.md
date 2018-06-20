@@ -1,6 +1,6 @@
 # Spring-notes
 This is all my Spring resources and tutorials that I am using
-<br/>
+<hr>
 Spring annotations
 
 - <a href="https://springframework.guru/spring-framework-annotations/">springframework.guru</a>

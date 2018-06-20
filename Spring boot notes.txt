@@ -119,6 +119,9 @@ Wednesday, 20 June 2018
 =======================
 
 How do you know what each dependency will integrate?
+What is Maven and how does it relate or work with Spring?
+Bill of Materials?
+Spring Initialiser?
 
 Whitelabel Error Page
 This application has no explicit mapping for /error, so you are seeing this as a fallback.

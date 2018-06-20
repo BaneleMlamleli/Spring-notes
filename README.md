@@ -10,3 +10,6 @@ Spring annotations
 
 - <a href="https://springframework.guru/spring-framework-annotations/">springframework.guru</a>
 - <a href="https://dzone.com/articles/a-guide-to-spring-framework-annotations">dzone</a>
+
+Maven
+- <a href="https://maven.apache.org/guides/getting-started/">Maven Getting Started Guide</a>

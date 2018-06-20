@@ -1,0 +1,146 @@
+Monday, 18 June 2018
+====================
+
+1. WHAT IS SPRING?
+"Spring" could be:
+	Spring Framework
+	Spring Boot
+	Spring Data
+	Spring Cloud
+	Spring Batch
+	...
+
+Spring Boot can be used for web applications and non-web applications.
+Built on top of Spring framework
+
+Notable features:
+	Auto configuration
+		- automatically configures your application  based on dependencies you have added
+		- Setting auto configuration
+			@EnableAutoConfiguration
+			public class DemoApplication{
+				
+			}
+		- Auto configuration can be easily removed
+		
+	Standalone
+		- It makes it easy to create stand-alone, production grade, spring based applications that you 'just run'
+		- Typical process for running Java web application
+			Package application -> Choose and download a webserver -> Configure webserver -> Deploy application and start webserver
+		- Creating an application that 'just run'
+			java -jar MyApplication.jar
+			package the application -> Run the application
+			
+	Opinionated
+		- 
+Spring framework is a modulor design(components that can be connected together)
+Spring framework can be brocken down into six different key areas:
+	1. Core
+		- This is the foundation of Spring framework
+	2. Web
+		- Spring web
+			- Model View Controller(MVC) result into a more organised and easier to maintain stuff
+			- Framework for handling web requests via Spring web MVC or Spring web webflux
+				a. Spring web MVC
+					Java servlet
+						- Low level API
+					Spring MVC
+						- High level API
+				b. Spring web webflux
+					- This is another way of handling web requests
+					- Request are processed asynchronously
+	3. Aspect Oriented Programming(AOP)
+		- Increases way of programming that increases organisation of code for concern that span multiple  tier or layers of an application
+		@PreAuthorize("hasRole('Admin')")	//annotation are just meta data that's added to the code
+		public void sensitiveOperation(){
+						
+		}
+	4. Data access
+		- Makes it easier to develop applications that interact with data by removing the biolerplate code
+			int cnt = new JdbcTemplate(ds).queryForInt("SELECT COUNT(*) FROM foo");
+		- Data validation support that creates a uniform set of response from different vendor programs (DataIntergrityViolationException)
+	5. Intergration
+		- Making different application/systems work together
+		- Many different ways of exposing operations
+			1. Remote method invocation(RMI)
+			2. Messaging systems
+			3. Web service
+	6. Testing
+		1. Unit testing
+			- Testing small individual parts of the whole application			
+		2. Intergration testing
+			- Combining all of the individual part and tested as a whole
+
+Exploring other Spring projects
+	1. Spring Data Project
+		- Spring data project extends Spring Framework's data access support(focus on relational database)
+	2. Spring Cloud Project
+		- ?
+	3. Spring Security Project
+		- powerful and highly customisable authentication and access-control framework
+
+Spring a good fit?
+
+===============================================================================================================================================================
+
+Tuesday, 19 June 2018
+=====================
+
+CREATING YOUR FIRST SPRING BOOT APPLICATION
+
+Creating Spring Boot project you can use:
+	- Spring Spring Tool Suit(Spring STS)
+	- Apache Maven
+	- IntelliJ
+
+Adding Spring Boot dependencies
+	<!-- Adding Spring boot dependencies -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.3.3 RELEASE</version>
+	</parent>
+
+How does Spring Boot work?
+	1. Main Java file that will run the App/entry point
+	2. Spring Application
+		- Spring context
+		- Spring environment initializer (autoconfiguration and initializers based on the dependencies and annotation)
+	3. Embedded Server container (Tomcat is the default and it is automatically configured)
+
+1. Spring Boot starters
+2. Containerless deployments
+3. Auto-configurations
+4. Testing with Spring Boot
+
+===============================================================================================================================================================
+
+Wednesday, 20 June 2018
+=======================
+
+How do you know what each dependency will integrate?
+
+Whitelabel Error Page
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+Wed Jun 20 12:25:06 CAT 2018
+There was an unexpected error (type=Not Found, status=404).
+No message available
+
+Lesson learnt from the above error message:	The main class should be in the root package.
+This is because Spring will only scan the classes below the main class package.
+It kind use the top-down concept
+
+@SpringBootApplication annotation. This annotation 'wraps up' many other necessary annotations for the application to work.
+One such annotation is @ComponentScan annotation.
+This annotation tells spring to look for Spring components and configure the application to run
+
+===============================================================================================================================================================
+
+Thursday, 21 June 2018
+====================
+
+===============================================================================================================================================================
+
+Friday, 22 June 2018
+=======================

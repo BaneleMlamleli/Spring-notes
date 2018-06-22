@@ -32,8 +32,10 @@ Notable features:
 			package the application -> Run the application
 			
 	Opinionated
-		- 
+		- It provides you with typical modules that are generally used
+		
 Spring framework is a modulor design(components that can be connected together)
+
 Spring framework can be brocken down into six different key areas:
 	1. Core
 		- This is the foundation of Spring framework
@@ -122,6 +124,7 @@ How do you know what each dependency will integrate?
 - Read through documentation and research
 
 What is Maven and how does it relate or work with Spring?
+- Maven is a build dependency management tool
 - Maven bundles the entire project(associated processes including: compiling computer source code into binary code, packaging binary code, and running automated tests.)
 
 Bill of Materials?
@@ -148,9 +151,14 @@ This annotation tells spring to look for Spring components and configure the app
 ===============================================================================================================================================================
 
 Thursday, 21 June 2018
-====================
+======================
+
+CREATING WEB APP
+Spring MVC will provide end-points for RESTful
+
+CONFIGURING AND ACCESSING A DATA SOURCE
 
 ===============================================================================================================================================================
 
 Friday, 22 June 2018
-=======================
+====================

@@ -190,7 +190,53 @@ spring-boot-starter-test
 Monday, 25 June 2018
 ====================
 
+Scope??
+
 1. What is MAVEN?
+	Maven is a built tool
+		- It produces one artifact(component)
+		- It helps us manage dependencies
+		
+	Maven can be used as a project management tool
+		- It handles releases and versioning
+		- Describes what the project is doing or what it produces
+		- Can easily produce JavaDocs and other site information
+
+2. Introduction to Maven (Creating a HelloWorld project)
+	- Maven file structure
+		- src/main/java		//This is the directory for the Java main class
+		- pom.xml			// This is the pom file that will contain all the dependencies and project details. POM stands for Project Object Model
+	
+	- POM File can be divided into four parts
+		1. Project information
+			a. groupId		- company/package name. usually com.companyname
+			b. artifactId	- name of our application
+			c. version		-	version of the app/project
+			d. packaging 	- This is how we want to distribute application (jar, war)
+			
+		2. Dependencies
+			direct dependencies used in our application
+		
+		3. Build
+			a. Plugins
+			b. Directory structure
+		
+		4. Repositories
+			a. Maven is the essential repo directory
+3. Types
+	- pom
+	- JAR
+	- EAR
+	- PAR
+	- WAR
+	- Maven-plugin
+	- ejb
+
+4. Maven repositories
+	- Local repositories
+		This is installed in your home directory .\m2
+
+5. Plugins
 
 ===============================================================================================================================================================
 

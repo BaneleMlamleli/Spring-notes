@@ -211,7 +211,7 @@ Scope??
 		1. Project information
 			a. groupId		- company/package name. usually com.companyname
 			b. artifactId	- name of our application
-			c. version		-	version of the app/project
+			c. version		- version of the app/project
 			d. packaging 	- This is how we want to distribute application (jar, war)
 			
 		2. Dependencies

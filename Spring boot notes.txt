@@ -258,7 +258,7 @@ spring.jpa.hibernate.ddl-auto = update
 
 controller (routing and validation)
 model
-service
+service (logic of the business)
 repository
 
 public interface JobRepository extends JpaRepository<Job, Long>

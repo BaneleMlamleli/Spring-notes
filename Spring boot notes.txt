@@ -242,7 +242,26 @@ Scope??
 
 Tueday, 26 June 2018
 ====================
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+spring.datasource.url = jdbc:mysql://localhost:3306/world?useSSL=false
+spring.datasource.username = root
+spring.datasource.password = 123abc
+
+#The SQL dialect makes Hibernate generate better SQL for the chosen database
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+#Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto = update
+
+
+controller (routing and validation)
+model
+service
+repository
+
+public interface JobRepository extends JpaRepository<Job, Long>
 ===============================================================================================================================================================
 
 Wednesday, 27 June 2018

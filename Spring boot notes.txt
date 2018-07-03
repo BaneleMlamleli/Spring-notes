@@ -271,7 +271,20 @@ Monday, 2 July 2018
 
 Tuesday, 3 July 2018
 ====================
+        //An arraylist that will store all the employee profile details
+        List<EmployeeProfile> allEmployees = employeeProfileRepository.findAll();
 
+        List<EmployeeProfileModel> employeeProfiles = new ArrayList<>();
+
+        allEmployees
+                .stream()
+                .forEach(employeeProfile -> {
+                    JobModel jobModel = jobProfileFactory.buildJobModel(employeeProfile.getJob());
+                    EmployeeProfileModel employeeProfileModel = employeeProfileFactory.buildEmployeeProfileModel(employeeProfile, jobModel);
+                    employeeProfiles.add(employeeProfileModel);
+                });
+
+        return employeeProfiles;
 ===============================================================================================================================================================
 
 Wednesday, 4 July 2018
